@@ -1,8 +1,24 @@
-logs
+# Scala specific
+# https://github.com/github/gitignore/blob/master/Scala.gitignore
+*.class
+*.log
+
+# Simple Build Tool specific
+# https://github.com/github/gitignore/blob/master/Global/SBT.gitignore
+# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
 target
-/.idea
-/.idea_modules
-/.classpath
-/.project
-/.settings
-/RUNNING_PID
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.history
+.cache
+.lib/
+
+# Ensime specific
+# https://github.com/github/gitignore/blob/master/Global/Ensime.gitignore
+.ensime
+.ensime_cache/
+.ensime_lucene/
